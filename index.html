@@ -5,8 +5,14 @@
 <title>菜鸟教程(runoob.com)</title>
 <script>
 function displayDate(){
-	loadImages(["https://v.starhalo.mobi/user/avatar/30/88/89713088.jpg?x-oss-process=style/s&mtime=1569078626"],(res)=>{alert(res)})
-}
+alert("Hello")
+	}
+	var aTag = document.getElementsByTagName('a')[0];
+         aTag.addEventListener('click', function(){
+        //调用android本地方法
+            vbrowser.loadImages(["https://v.starhalo.mobi/user/avatar/30/88/89713088.jpg?x-oss-process=style/s&mtime=1569078626"],(res)=>{alert(res)});
+             return false;
+          }, false);
 </script>
 </head>
 <body>
