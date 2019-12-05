@@ -17,13 +17,15 @@
 
 document.getElementById('button').addEventListener('click',function(){
 	if(!!!window.vbrowser) {alert('vbrowser not exists');return}
-	window.vbrowser.loadImages(["https://v.starhalo.mobi/user/avatar/30/88/89713088.jpg?x-oss-process=style/s&mtime=1569078626"],(res)=>{alert(res)})
+	window.vbrowser.loadImages("["https:\/\/v.starhalo.mobi\/user\/avatar\/30\/88\/89713088.jpg?x-oss-process=style\/s&mtime=1569078626"]",function(res){alert(res)})
 })
 
 </script>
 	
 	<img src="https://v.starhalo.mobi/user/avatar/30/88/89713088.jpg">
 
+
+	<img src="http://www.w3school.com.cn/i/w3school_logo_white.gif" />
 
 </body>
 </html>
