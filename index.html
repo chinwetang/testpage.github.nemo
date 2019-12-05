@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>菜鸟教程(runoob.com)</title>
-<script>
-function displayDate(){
-alert("Hello")
-	}
-	var aTag = document.getElementsByTagName('a')[0];
-         aTag.addEventListener('click', function(){
-        //调用android本地方法
-            vbrowser.loadImages(["https://v.starhalo.mobi/user/avatar/30/88/89713088.jpg?x-oss-process=style/s&mtime=1569078626"],(res)=>{alert(res)});
-             return false;
-          }, false);
-</script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<title>Demo</title>
 </head>
 <body>
 
-<h1>我的第一个 JavaScript 程序</h1>
-<p id="demo">这是一个段落</p>
+	<button id='button'>测试下载</button>
 
-<button type="button" onclick="displayDate()">显示日期</button>
-	<img src="https://github.com/chinwetang/testpage.github.nemo/blob/master/timg.jpg">
+
+<script>
+
+
+document.getElementById('button').addEventListener('click',function(){
+	if(!!!window.vbrowser) {alert('vbrowser not exists');return}
+	window.vbrowser.loadImages(["https://v.starhalo.mobi/user/avatar/30/88/89713088.jpg?x-oss-process=style/s&mtime=1569078626"],(res)=>{alert(res)})
+})
+
+</script>
+	
+	<img src="https://v.starhalo.mobi/user/avatar/30/88/89713088.jpg">
+
+
 </body>
 </html>
